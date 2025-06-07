@@ -1,9 +1,5 @@
 //function to calculate fare price per kilometer with a base fare
 function calculateBodaFare(distanceInKm){
-
-    //prompts user for a value 
-    const distanceInKm = prompt('Unafika wapi Mkubwa? Kilometer ngapi?:');
-
     //the base fare
     const baseFare = 50;
 
@@ -17,8 +13,12 @@ function calculateBodaFare(distanceInKm){
     const totalFare = baseFare + (distanceInKm * chargePerKm);
 
     //logs replies for each input value
-    comnsole.log(`Uko kwote? Io ni ${distanceInKm} km:`);
+    console.log(`Uko kwote? Io ni ${distanceInKm} km:`);
     console.log(`Ukikalia Pikipiki: KES ${baseFare}`);
     console.log(`Mpaka Uko: KES ${distanceTravelled}`);
     console.log(`Total: KES ${totalFare}`);
 }
+
+const distance = prompt('Unafika wapi Mkubwa? Kilometer ngapi?:');
+// Convert the input to a number and call the function
+calculateBodaFare(Number(distance));
