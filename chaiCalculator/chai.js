@@ -1,10 +1,7 @@
 //function that takes user input and uses it to calculate the amount of ingredients to use to make the order
 function calculateChaiIngredients(){
     //prompt that collects user input 
-    const order = prompt('Karibu! How many cups of Chai Bora would you like to make?: ');
-
-    //assigns order the number of cups as an argument
-    order = Number(numberOfCups);
+    let order = prompt('Karibu! How many cups of Chai Bora would you like to make?: ');
 
     //declared the ingredient values and multiplies by the number of cups that is collected from the prompt
     let water = 200 * order;
@@ -19,3 +16,6 @@ function calculateChaiIngredients(){
     console.log(`${teaLeaves}: ${order} tablespoons`);
     console.log(`${sugar}: ${order} teaspoons`);
 }
+
+// function is invoked
+calculateChaiIngredients();
