@@ -18,4 +18,8 @@ function calculateChaiIngredients(){
 }
 
 // function is invoked
+<<<<<<< HEAD
 calculateChaiIngredients();
+=======
+calculateChaiIngredients();
+>>>>>>> 4511f4d2f0f81f93bd5e614cb58459ed3e012a49
